@@ -24,7 +24,7 @@ savefig("timescale.png", dpi=300)
 
 The code above generates the following image.
 
-![Geologic time scale from 100 Ma ago to now](https://github.com/Mikumikunisiteageru/GeologicTime.jl/blob/main/docs/illust/imggts.png)
+![Geologic time scale from 100 Ma ago to now](https://github.com/Mikumikunisiteageru/GeologicTime.jl/blob/master/docs/illust/imggts.png)
 
 In addition, the package also provides simple lookup functions such as `geounit`, `getcolor`, `getstart`, `getstop`, `getspan`, and `getgeotime`, whose usage is available in the [documentation](https://Mikumikunisiteageru.github.io/GeologicTime.jl/stable).
 
