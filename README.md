@@ -3,7 +3,7 @@
 [![Documentation](https://img.shields.io/badge/docs-stable-blue.svg)](https://Mikumikunisiteageru.github.io/GeologicTime.jl/stable)
 [![Documentation](https://img.shields.io/badge/docs-dev-blue.svg)](https://Mikumikunisiteageru.github.io/GeologicTime.jl/dev)
 [![CI](https://github.com/Mikumikunisiteageru/GeologicTime.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/Mikumikunisiteageru/GeologicTime.jl/actions/workflows/CI.yml)
-[![Codecov](https://codecov.io/gh/Mikumikunisiteageru/GeologicTime.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/Mikumikunisiteageru/GeologicTime.jl)
+[![Codecov](https://codecov.io/gh/Mikumikunisiteageru/GeologicTime.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/Mikumikunisiteageru/GeologicTime.jl)
 [![Aqua.jl Quality Assurance](https://img.shields.io/badge/Aquajl-%F0%9F%8C%A2-aqua.svg)](https://github.com/JuliaTesting/Aqua.jl)
 
 GeologicTime.jl is mainly designed to draw geologic time scale in a certain time interval using the function `drawtimescale`. This function relies on [PyPlot.jl](https://github.com/JuliaPy/PyPlot.jl), which needs to be manually installed and imported.
