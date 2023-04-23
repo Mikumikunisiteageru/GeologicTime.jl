@@ -1,8 +1,8 @@
 # src/pyplot.jl
 
-export drawgts
+export drawtimescale
 
-function drawgts(ax, 
+function drawtimescale(ax, 
 		s::Real, t::Real=0.0, units::AbstractVector{<:Integer}=[3,4]; 
 		facealpha=1.0, facezorder=-10, fillkwargs=Dict(), 
 		edgealpha=1.0, lw=0.8, ls="-", edgecolor="k", 
@@ -18,7 +18,8 @@ function drawgts(ax,
 	all(sn .!= nothing) && all(tn .!= nothing) || 
 		throw(ArgumentError(
 			"geologic time scale of some `units` undefined on `[s,t]`!"))
-	for (i, _) = enumerate(units)
+	l = length(units)
+	for i = 1:l
 		name = sn[i]
 		flag = false
 		while !flag
@@ -40,12 +41,15 @@ function drawgts(ax,
 			ls=ls, lw=lw, color=edgecolor, alpha=edgealpha, 
 			zorder=edgezorder, plotkwargs...)
 	end
+	ax.plot([(s+t)/2, s, s, t, t, (s+t)/2], [1, 1, 1+l, 1+l, 1, 1]; 
+		ls=ls, lw=lw, color=edgecolor, alpha=edgealpha, 
+		zorder=edgezorder, plotkwargs...)
 	ax.set_xlim(s, t)
-	ax.set_ylim(length(units) + 1, 1)
+	ax.set_ylim(1+l, 1)
 	ax.set_xticks([])
 	ax.set_yticks([])
 	ax.grid("off")
 end
 
-drawgts(s::Real, t::Real=0.0, units::AbstractVector{<:Integer}=[3,4]; 
-	kwargs...) = drawgts(PyPlot.gca(), s, t, units; kwargs...)
+drawtimescale(s::Real, t::Real=0.0, units::AbstractVector{<:Integer}=[3,4]; 
+	kwargs...) = drawtimescale(PyPlot.gca(), s, t, units; kwargs...)
