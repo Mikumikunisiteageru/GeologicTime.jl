@@ -85,3 +85,13 @@ end
 	@test getgeotime(4567.8; bound=:forward) == []
 	@test getgeotime(4567.8; bound=:backward) == []
 end
+
+@testset "prev" begin
+	@test GeologicTime.prev("Hadean") == nothing
+	@test GeologicTime.prev("Phanerozoic") == "Proterozoic"
+end
+
+@testset "next" begin
+	@test GeologicTime.next("Hadean") == "Archean"
+	@test GeologicTime.next("Phanerozoic") == nothing
+end

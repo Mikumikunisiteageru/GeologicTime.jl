@@ -3,6 +3,7 @@
 module GeologicTime
 
 using DelimitedFiles
+using Requires
 
 export getstart, getstop, getspan, getcolor, getunit
 export getgeotime
@@ -25,11 +26,8 @@ getcolor(name::AbstractString) = TIMESCALE[NAMEINDEX[name], 3]
 
 getstart(name::AbstractString) = TIMESCALE[NAMEINDEX[name], 4]
 
-function getstop(name::AbstractString)
-	i = NAMEINDEX[name]
-	return (i == 1 || TIMESCALE[i-1, 1] != TIMESCALE[i, 1]) ? 
-		0.0 : TIMESCALE[i-1, 4]
-end
+getstop(name::AbstractString) = 
+	next(name) == nothing ? 0.0 : TIMESCALE[NAMEINDEX[name]-1, 4]
 
 getspan(name::AbstractString) = (getstart(name), getstop(name))
 
@@ -60,6 +58,22 @@ function getgeotime(millionyears::Real; bound=:forward)
 		geotime != nothing && push!(kvpairs, UNITS[unit] => geotime)
 	end
 	return kvpairs
+end
+
+function prev(name::AbstractString)
+	i = NAMEINDEX[name]
+	return i == size(TIMESCALE, 1) || TIMESCALE[i+1, 1] != TIMESCALE[i, 1] ? 
+		nothing : TIMESCALE[i+1, 2]
+end
+
+function next(name::AbstractString)
+	i = NAMEINDEX[name]
+	return i == 1 || TIMESCALE[i-1, 1] != TIMESCALE[i, 1] ? 
+		nothing : TIMESCALE[i-1, 2]
+end
+
+function __init__()
+    @require PyPlot="d330b81b-6aea-500a-939a-2ce795aea3ee" include("pyplot.jl")
 end
 
 end # module GeologicTime
