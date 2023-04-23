@@ -1,0 +1,7 @@
+name = "GeologicTime"
+uuid = "7ffcb9c5-a22b-481a-ba2a-c280bedef8cf"
+authors = ["Yu-Chang YANG <yang.yc.allium@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"

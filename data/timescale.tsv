@@ -1,0 +1,171 @@
+1	Phanerozoic	#9AD9DD	538.8
+1	Proterozoic	#F73563	2500.0
+1	Archean	#F0047F	4000.0
+1	Hadean	#AE027E	4567.3
+2	Cenozoic	#F2F91D	66.0
+2	Mesozoic	#67C5CA	251.902
+2	Paleozoic	#99C08D	538.8
+2	Neoproterozoic	#FEB342	1000.0
+2	Mesoproterozoic	#FDB462	1600.0
+2	Paleoproterozoic	#F74370	2500.0
+2	Neoarchean	#F99BC1	2800.0
+2	Mesoarchean	#F768A9	3200.0
+2	Paleoarchean	#F4449F	3600.0
+2	Eoarchean	#DA037F	4000.0
+3	Quaternary	#F9F97F	2.58
+3	Neogene	#FFE619	23.03
+3	Paleogene	#FD9A52	66.0
+3	Cretaceous	#7FC64E	145.0
+3	Jurassic	#34B2C9	201.4
+3	Triassic	#812B92	251.902
+3	Permian	#F04028	298.9
+3	Carboniferous	#67A599	358.9
+3	Devonian	#CB8C37	419.2
+3	Silurian	#B3E1B6	443.8
+3	Ordovician	#009270	485.4
+3	Cambrian	#7FA056	538.8
+3	Ediacaran	#FED96A	635.0
+3	Cryogenian	#FECC5C	720.0
+3	Tonian	#FEBF4E	1000.0
+3	Stenian	#FED99A	1200.0
+3	Ectasian	#FDCC8A	1400.0
+3	Calymmian	#FDC07A	1600.0
+3	Statherian	#F875A7	1800.0
+3	Orosirian	#F76898	2050.0
+3	Rhyacian	#F75B89	2300.0
+3	Siderian	#F74F7C	2500.0
+4	Holocene	#FDE6CA	0.0117
+4	Pleistocene	#FFEFAF	2.58
+4	Pliocene	#FFFF99	5.333
+4	Miocene	#FFFF00	23.03
+4	Oligocene	#FEC07A	33.9
+4	Eocene	#FDB46C	56.0
+4	Paleocene	#FDA75F	66.0
+4	Late Cretaceous	#A6D84A	100.5
+4	Early Cretaceous	#8CCD57	145.0
+4	Late Jurassic	#B3E3EE	161.5
+4	Middle Jurassic	#80CFD8	174.7
+4	Early Jurassic	#42AED0	201.4
+4	Late Triassic	#BD8CC3	237.0
+4	Middle Triassic	#B168B1	247.2
+4	Early Triassic	#983999	251.902
+4	Lopingian	#FBA794	259.51
+4	Guadalupian	#FB745C	273.01
+4	Cisuralian	#EF5845	298.9
+4	Pennsylvanian	#7EBCC6	323.2
+4	Mississippian	#678F66	358.9
+4	Late Devonian	#F1E19D	382.7
+4	Middle Devonian	#F1C868	393.3
+4	Early Devonian	#E5AC4D	419.2
+4	Pridoli	#E6F5E1	423.0
+4	Ludlow	#BFE6CF	427.4
+4	Wenlock	#B3E1C2	433.4
+4	Llandovery	#99D7B3	443.8
+4	Late Ordovician	#7FCA93	458.4
+4	Middle Ordovician	#4DB47E	470.0
+4	Early Ordovician	#1A9D6F	485.4
+4	Furongian	#B3E095	497.0
+4	Miaolingian	#A6CF86	509.0
+4	Series 2	#99C078	521.0
+4	Terreneuvian	#8CB06C	538.8
+5	Meghalayan	#fcf0f2	0.0042
+5	Northgrippian	#fcf0e8	0.0082
+5	Greenlandian	#fcf0de	0.0117
+5	Late Pleistocene	#FFF2D3	0.129
+5	Chibanian	#FFF2C7	0.774
+5	Calabrian	#FFF2BA	1.8
+5	Gelasian	#FFEDB3	2.58
+5	Piacenzian	#FFFFBF	3.6
+5	Zanclean	#FFFFB3	5.333
+5	Messinian	#FFFF73	7.246
+5	Tortonian	#FFFF66	11.63
+5	Serravallian	#FFFF59	13.82
+5	Langhian	#FFFF4D	15.97
+5	Burdigalian	#FFFF41	20.44
+5	Aquitanian	#FFFF33	23.03
+5	Chattian	#FEE6AA	27.82
+5	Rupelian	#FED99A	33.9
+5	Priabonian	#FDCDA1	37.71
+5	Bartonian	#FDC091	41.2
+5	Lutetian	#FDB482	47.8
+5	Ypresian	#FCA773	56.0
+5	Thanetian	#FDBF6F	59.2
+5	Selandian	#FEBF65	61.6
+5	Danian	#FDB462	66.0
+5	Maastrichtian	#F2FA8C	72.1
+5	Campanian	#E6F47F	83.6
+5	Santonian	#D9EF74	86.3
+5	Coniacian	#CCE968	89.8
+5	Turonian	#BFE35D	93.9
+5	Cenomanian	#B3DE53	100.5
+5	Albian	#CCEA97	113.0
+5	Aptian	#BFE48A	121.4
+5	Barremian	#B3DF7F	129.4
+5	Hauterivian	#A6D975	132.6
+5	Valanginian	#99D36A	139.8
+5	Berriasian	#8CCD60	145.0
+5	Tithonian	#D9F1F7	149.2
+5	Kimmeridgian	#CCECF4	154.8
+5	Oxfordian	#BFE7F1	161.5
+5	Callovian	#BFE7E5	165.3
+5	Bathonian	#B3E2E3	168.2
+5	Bajocian	#A6DDE0	170.9
+5	Aalenian	#9AD9DD	174.7
+5	Toarcian	#99CEE3	184.2
+5	Pliensbachian	#80C5DD	192.9
+5	Sinemurian	#67BCD8	199.5
+5	Hettangian	#4EB3D3	201.4
+5	Rhaetian	#E3B9DB	208.5
+5	Norian	#D6AAD3	227.0
+5	Carnian	#C99BCB	237.0
+5	Ladinian	#C983BF	242.0
+5	Anisian	#BC75B7	247.2
+5	Olenekian	#B051A5	251.2
+5	Induan	#A4469F	251.902
+5	Changhsingian	#FCC0B2	254.14
+5	Wuchiapingian	#FCB4A2	259.51
+5	Capitanian	#FB9A85	264.28
+5	Wordian	#FB8D76	266.9
+5	Roadian	#FB8069	273.01
+5	Kungurian	#E38776	283.5
+5	Artinskian	#E37B68	290.1
+5	Sakmarian	#E36F5C	293.52
+5	Asselian	#E36350	298.9
+5	Gzhelian	#CCD4C7	303.7
+5	Kasimovian	#BFD0C5	307.0
+5	Moscovian	#B3CBB9	315.2
+5	Bashkirian	#99C2B5	323.2
+5	Serpukhovian	#BFC26B	330.9
+5	Viséan	#A6B96C	346.7
+5	Tournaisian	#8CB06C	358.9
+5	Famennian	#F2EDB3	372.2
+5	Frasnian	#F2EDAD	382.7
+5	Givetian	#F1E185	387.7
+5	Eifelian	#F1D576	393.3
+5	Emsian	#E5D075	407.6
+5	Pragian	#E5C468	410.8
+5	Lochkovian	#E5B75A	419.2
+5	Ludfordian	#D9F0DF	425.6
+5	Gorstian	#CCECDD	427.4
+5	Homerian	#CCEBD1	430.5
+5	Sheinwoodian	#BFE6C3	433.4
+5	Telychian	#BFE6CF	438.5
+5	Aeronian	#B3E1C2	440.8
+5	Rhuddanian	#A6DCB5	443.8
+5	Hirnantian	#A6DBAB	445.2
+5	Katian	#99D69F	453.0
+5	Sandbian	#8CD094	458.4
+5	Darriwilian	#74C69C	467.3
+5	Dapingian	#66C092	470.0
+5	Floian	#41B087	477.7
+5	Tremadocian	#33A97E	485.4
+5	Stage 10	#E6F5C9	489.5
+5	Jiangshanian	#D9F0BB	494.0
+5	Paibian	#CCEBAE	497.0
+5	Guzhangian	#CCDFAA	500.5
+5	Drumian	#BFD99D	504.5
+5	Wuliuan	#B3D492	509.0
+5	Stage 4	#B3CA8E	514.0
+5	Stage 3	#A6C583	521.0
+5	Stage 2	#A6BA80	529.0
+5	Fortunian	#99B575	538.8
