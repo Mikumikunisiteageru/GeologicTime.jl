@@ -10,7 +10,7 @@ export getgeotime
 UNITS = ["Eon", "Era", "Period", "Epoch", "Age"]
 
 DATAPATH = joinpath(pkgdir(GeologicTime), "data")
-TIMESCALE = readdlm(joinpath(DATAPATH, "TIMESCALE.tsv"), '\t')
+TIMESCALE = readdlm(joinpath(DATAPATH, "timescale.tsv"), '\t')
 
 allunique(TIMESCALE[:, 2]) || error("package data broken!")
 
