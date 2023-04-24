@@ -1,6 +1,7 @@
 # test/runtests.jl
 
 using GeologicTime
+using PyPlot
 using Test
 import Aqua
 
@@ -94,4 +95,26 @@ end
 @testset "next" begin
 	@test GeologicTime.next("Hadean") == "Archean"
 	@test GeologicTime.next("Phanerozoic") == nothing
+end
+
+@testset "drawtimescale" begin
+	@test_throws ArgumentError drawtimescale(nothing, 100, 0, Int[])
+	@test_throws ArgumentError drawtimescale(nothing, 100, 0, [3, 3])
+	@test_throws ArgumentError drawtimescale(nothing, 100, 0, [4, 3])
+	@test_throws ArgumentError drawtimescale(nothing, 100, 0, [3, 6])
+	@test_throws ArgumentError drawtimescale(nothing, 100, 100)
+	@test_throws ArgumentError drawtimescale(nothing, 100, 101)
+	@test_throws ArgumentError drawtimescale(nothing, 1000, 0, [5])
+	@test drawtimescale(100, 0, [3, 4]) == nothing
+	PyPlot.close()
+	ca = gca()
+	@test drawtimescale(ca, 100, 0, [3, 4]) == nothing
+	PyPlot.close()
+	@test drawtimescale(100, 0, [3, 4]; fontsize=8, texts = Dict(
+		"Cretaceous" => "Cretaceous", "Paleogene" => "Paleogene", 
+		"Neogene" => "Neogene", "Quaternary" => "Q.", 
+		"Late Cretaceous" => "Late Cretaceous", "Paleocene" => "Paleoc.", 
+		"Eocene" => "Eocene", "Oligocene" => "Oligoc.", "Miocene" => "Miocene", 
+		"Pliocene" => "P.", "Pleistocene" => "P.")) == nothing
+	PyPlot.close()
 end
