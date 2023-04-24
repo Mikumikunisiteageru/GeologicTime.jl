@@ -13,11 +13,11 @@ export drawtimescale
 	drawtimescale(s::Real, t::Real=0.0, 
 		units::AbstractVector{<:Integer}=[3,4]; kwargs...) :: Nothing
 
-Draw a geologic time scale from `s` Ma ago to `t` Ma ago (default `0`, i.e. 
+Draw the geologic time scale from `s` Ma ago to `t` Ma ago (default `0`, i.e. 
 now) of specified `units` (default `[3, 4]`, i.e. period and epoch).
 
 The first argument `ax` refers to a set of axes from PyPlot.jl. When it is 
-omitted, current axes are applied.
+omitted, the current set of axes is applied.
 """
 function drawtimescale(ax, 
 		s::Real, t::Real=0.0, units::AbstractVector{<:Integer}=[3,4]; 

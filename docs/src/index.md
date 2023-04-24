@@ -17,7 +17,7 @@ GeologicTime.prev
 GeologicTime.next
 ```
 
-## Plotting functions
+## Plotting function
 
 ```@docs
 drawtimescale
