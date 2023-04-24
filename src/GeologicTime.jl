@@ -119,7 +119,15 @@ julia> getgeotime(39)
  "Period" => "Paleogene"
   "Epoch" => "Eocene"
     "Age" => "Bartonian"
-``` 
+
+julia> getgeotime(3900, 3) == nothing
+true
+
+julia> getgeotime(3900)
+2-element Vector{Pair{String, String}}:
+ "Eon" => "Archean"
+ "Era" => "Eoarchean"
+```
 """
 function getgeotime(millionyears::Real, unit::Integer; bound=:forward)
 	1 <= unit <= 5 || throw(ArgumentError("`unit` must be " * 
@@ -160,7 +168,8 @@ geologic time has no predecessor, `nothing` is returned.
 julia> GeologicTime.prev("Phanerozoic")
 "Proterozoic"
 
-julia> GeologicTime.prev("Hadean")
+julia> GeologicTime.prev("Hadean") == nothing
+true
 ``` 
 """
 function prev(name::AbstractString)
@@ -177,7 +186,8 @@ geologic time has no successor, `nothing` is returned.
 
 # Example
 ```jldoctest
-julia> GeologicTime.next("Phanerozoic")
+julia> GeologicTime.next("Phanerozoic") == nothing
+true
 
 julia> GeologicTime.next("Hadean")
 "Archean"
