@@ -2,6 +2,23 @@
 
 export drawtimescale
 
+"""
+	drawtimescale(ax, 
+		s::Real, t::Real=0.0, units::AbstractVector{<:Integer}=[3,4]; 
+		facealpha=1.0, facezorder=-10, fillkwargs=Dict(), 
+		edgealpha=1.0, lw=0.8, ls="-", edgecolor="k", 
+			edgezorder=0, plotkwargs=Dict(), 
+		texts=Dict(), ha="center", va="center", fontsize=10, textcolor="k", 
+			textzorder=10, textkwargs=Dict()) :: Nothing
+	drawtimescale(s::Real, t::Real=0.0, 
+		units::AbstractVector{<:Integer}=[3,4]; kwargs...) :: Nothing
+
+Draw a geologic time scale from `s` Ma ago to `t` Ma ago (default `0`, i.e. 
+now) of specified `units` (default `[3, 4]`, i.e. period and epoch).
+
+The first argument `ax` refers to a set of axes from PyPlot.jl. When it is 
+omitted, current axes are applied.
+"""
 function drawtimescale(ax, 
 		s::Real, t::Real=0.0, units::AbstractVector{<:Integer}=[3,4]; 
 		facealpha=1.0, facezorder=-10, fillkwargs=Dict(), 
@@ -50,6 +67,5 @@ function drawtimescale(ax,
 	ax.set_yticks([])
 	ax.grid("off")
 end
-
 drawtimescale(s::Real, t::Real=0.0, units::AbstractVector{<:Integer}=[3,4]; 
 	kwargs...) = drawtimescale(PyPlot.gca(), s, t, units; kwargs...)

@@ -3,6 +3,7 @@
 using GeologicTime
 
 using Documenter
+using PyPlot
 
 makedocs(
 	sitename = "GeologicTime.jl",

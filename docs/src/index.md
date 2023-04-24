@@ -4,7 +4,7 @@
 GeologicTime
 ```
 
-## Functions
+## Lookup functions
 
 ```@docs
 getunit
@@ -15,4 +15,10 @@ getspan
 getgeotime
 GeologicTime.prev
 GeologicTime.next
+```
+
+## Plotting functions
+
+```@docs
+drawtimescale
 ```
