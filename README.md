@@ -22,10 +22,10 @@ gca().set_position([0.02, 0.05, 0.96, 0.9])
 savefig("timescale.png", dpi=300)
 ```
 
-The code above generates the following image.
+The code above generates the following image. In the argument list of `drawtimescale`, `100` and `0` are two ends of the time interval, representing time in million year ago; `[3, 4]` indicates the function to draw periods (code `3`) and epochs (code `4`) in the chart.
 
 ![Geologic time scale from 100 Ma ago to now](https://github.com/Mikumikunisiteageru/GeologicTime.jl/blob/master/docs/illust/imggts.png)
 
-In addition, the package also provides simple lookup functions such as `geounit`, `getcolor`, `getstart`, `getstop`, `getspan`, and `getgeotime`, whose usage is available in the [documentation](https://Mikumikunisiteageru.github.io/GeologicTime.jl/stable).
+In addition, the package also provides simple lookup functions such as `getunit`, `getcolor`, `getstart`, `getstop`, `getspan`, and `getgeotime`, whose usage is explained in the [documentation](https://Mikumikunisiteageru.github.io/GeologicTime.jl/stable). These functions do not rely on PyPlot.jl --- they can be called once GeologicTime.jl is loaded.
 
 Code and documentation of GeologicTime.jl are released under the MIT License. However, all the data are based on materials from [Wikipedia](https://en.wikipedia.org/wiki/Geologic_time_scale) accessed on April 23, 2023, available under the CC-SA 3.0 License. Credit of relevant files including [data/wikipedia.html](https://github.com/Mikumikunisiteageru/GeologicTime.jl/blob/master/data/wikipedia.html) and its derivation [data/timescale.tsv](https://github.com/Mikumikunisiteageru/GeologicTime.jl/blob/master/data/timescale.tsv) is due to Wikipedia contributors.
