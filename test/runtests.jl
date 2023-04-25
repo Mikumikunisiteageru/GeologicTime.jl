@@ -112,9 +112,9 @@ end
 	PyPlot.close()
 	@test drawtimescale(100, 0, [3, 4]; fontsize=8, texts = Dict(
 		"Cretaceous" => "Cretaceous", "Paleogene" => "Paleogene", 
-		"Neogene" => "Neogene", "Quaternary" => "Q.", 
+		"Neogene" => "Neogene", "Quaternary" => "Q", 
 		"Late Cretaceous" => "Late Cretaceous", "Paleocene" => "Paleoc.", 
 		"Eocene" => "Eocene", "Oligocene" => "Oligoc.", "Miocene" => "Miocene", 
-		"Pliocene" => "P.", "Pleistocene" => "P.")) == nothing
+		"Pliocene" => "P", "Pleistocene" => "P")) == nothing
 	PyPlot.close()
 end
